@@ -1,0 +1,3 @@
+2 ways to build vue components 
+    1)options (traditional) everything is within options or objects the data the methods
+    2)composition Api for more flexible and allow to create more complex components
