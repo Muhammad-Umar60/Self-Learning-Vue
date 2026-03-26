@@ -3,7 +3,7 @@ export default{
   data(){
     return{
       name: "Umar",
-      status: true ,
+      status: "active" ,
     }
   }
 }
@@ -11,7 +11,9 @@ export default{
 
 <template>
   <h1>{{ name }}</h1>
-  <p v-if="status">User is Active</p>
+  <p v-if="status === 'active'">User is Active</p>
+  <p v-else-if="status === 'pending'">User is pending</p>
+  <p v-else="status">User is inactive</p>
 </template>
 
 <style scoped>
